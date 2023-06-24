@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sample blog post
+title: 这是一篇文章
 subtitle: Each post also has a subtitle
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
