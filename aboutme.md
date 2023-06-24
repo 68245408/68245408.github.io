@@ -1,10 +1,10 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: 一个坚持在技术第一线的老程序员
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+我叫刚哥，从1999年毕业开始到现在，我在程序开发行业竟然已经走过了24年
 
 - I rock a great mustache
 - I'm extremely loyal to my family
