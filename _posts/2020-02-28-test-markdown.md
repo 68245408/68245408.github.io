@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 这是一篇文章
-subtitle: Each post also has a subtitle
+subtitle: 这是文章的副标题
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [test,wwg]
 comments: true
 ---
 
