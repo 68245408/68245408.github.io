@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "欢迎光临本博客"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  text: "一个老程序员的博客"
+  tagline: 一个技术博客
   actions:
     - theme: brand
       text: Markdown Examples
