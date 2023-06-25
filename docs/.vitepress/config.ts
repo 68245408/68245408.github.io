@@ -36,15 +36,15 @@ const config = defineConfig({
 	base: '/',
 	lang: 'zh-CN',
 	// 网站标题，左上角以及meta标题
-	title: 'VitePressCN',
-	description: 'Vite & Vue 驱动的静态站点生成器',
+	title: '刚哥的主页',
+	description: '一个老程序员的主页',
 	cleanUrls: true,
 	// 是否忽略死链
 	ignoreDeadLinks: false,
 	// 最后更新于 开关
 	lastUpdated: true,
 	head: [
-		['link', { rel: 'icon', href: '/VitePressCN/logo.svg' }],
+		['link', { rel: 'icon', href: '/logo.svg' }],
 		['meta', { name: 'google-site-verification', content: 'Wzz07XeBKMnNRNwUcsw6hEgpGoTkggTxORUtLRm6rns' }],
 	],
 	// markdown配置
@@ -68,7 +68,7 @@ const config = defineConfig({
 		// outline: 'deep',
 		logo: '/logo.svg',
 		lastUpdatedText: '最近更新时间',
-		siteTitle: 'VitePressCN',
+		siteTitle: '刚哥的主页',
 		// siteTitle: false, // 不显示标题
 		// 上一页下一页文本
 		docFooter: {
@@ -77,22 +77,22 @@ const config = defineConfig({
 		},
 		// 顶部导航nav
 		nav: [
-			{ text: '指引', link: '/guide/what-is-vitepress', activeMatch: '/guide/' },
-			{ text: '配置参考', link: '/reference/site-config', activeMatch: '/reference/' },
-			{
-				text: pkg.version,
-				items: [
-					// { text: 'itemA', link: '/item-1' },
-					{ text: '更新日志', link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md' },
-					{ text: '贡献', link: 'https://github.com/vuejs/vitepress/blob/main/.github/contributing.md' },
-				],
-			},
+			{ text: '本站怎么建', link: '/guide/what-is-vitepress', activeMatch: '/guide/' },
+			{ text: 'Rust', link: '/rust/index', activeMatch: '/rust/' },
+			// {
+			// 	text: pkg.version,
+			// 	items: [
+			// 		// { text: 'itemA', link: '/item-1' },
+			// 		{ text: '更新日志', link: 'https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md' },
+			// 		{ text: '贡献', link: 'https://github.com/vuejs/vitepress/blob/main/.github/contributing.md' },
+			// 	],
+			// },
 		],
 		// 侧边导航
 
 		sidebar: {
 			'/guide/': sidebarGuide(),
-			'/reference/': sidebarReference(),
+			'/rust/': sidebarRust(),
 		},
 		// 社交媒体跳转
 		socialLinks: [
@@ -109,12 +109,12 @@ const config = defineConfig({
 		// 每个页面页脚的编辑此页  :path  为当前路由
 		editLink: {
 			text: '在GitHub上编辑此页',
-			pattern: 'https://github.com/vanchKong/VitePressCN/edit/main/docs/:path',
+			pattern: 'https://github.com/68245408/68245408/edit/main/docs/:path',
 		},
 
 		footer: {
 			message: 'Released under the MIT License.',
-			copyright: 'Copyright © 2019-present Evan You',
+			copyright: 'Copyright © 2023-present Wangweigang',
 		},
 		// carbonAds: {
 		// 	code: 'CEBDT27Y',
@@ -204,15 +204,6 @@ function sidebarGuide() {
 		// 	],
 		// },
 		{
-			text: '配置 & API 参考',
-			link: '/reference/site-config',
-		},
-	]
-}
-
-function sidebarReference() {
-	return [
-		{
 			text: '参考',
 			items: [
 				{ text: '站点配置', link: '/reference/site-config' },
@@ -236,6 +227,25 @@ function sidebarReference() {
 						{ text: '最近更新时间', link: '/reference/default-theme-last-updated' },
 						{ text: '搜索', link: '/reference/default-theme-search' },
 						{ text: 'Carbon Ads', link: '/reference/default-theme-carbon-ads' },
+					],
+				},
+			],
+		},
+	]
+}
+
+function sidebarRust() {
+	return [
+		{
+			text: '概述',
+			items: [
+				{ text: '第一页', link: '/rust/index' },
+				{
+					text: '第一章',
+					// collapsed: true,
+					items: [
+						{ text: '第一节', link: '/rust/chapter1' },
+						{ text: '如何进行nodejs多版本管理', link: '/other/index' },
 					],
 				},
 			],
