@@ -36,15 +36,15 @@ const config = defineConfig({
 	base: '/',
 	lang: 'zh-CN',
 	// 网站标题，左上角以及meta标题
-	title: 'VitePressCN',
-	description: 'Vite & Vue 驱动的静态站点生成器',
+	title: '刚哥的主页',
+	description: '一个老程序员的主页',
 	cleanUrls: true,
 	// 是否忽略死链
 	ignoreDeadLinks: false,
 	// 最后更新于 开关
 	lastUpdated: true,
 	head: [
-		['link', { rel: 'icon', href: '/VitePressCN/logo.svg' }],
+		['link', { rel: 'icon', href: '/logo.svg' }],
 		['meta', { name: 'google-site-verification', content: 'Wzz07XeBKMnNRNwUcsw6hEgpGoTkggTxORUtLRm6rns' }],
 	],
 	// markdown配置
