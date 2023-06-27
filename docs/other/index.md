@@ -1,4 +1,4 @@
-Windows 下多版本 NodeJS 安装和管理
+Windows下多版本NodeJS的实现
 
 
 ## 下载nmv:

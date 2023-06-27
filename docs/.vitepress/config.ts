@@ -79,6 +79,7 @@ const config = defineConfig({
 		nav: [
 			{ text: '本站怎么建', link: '/guide/what-is-vitepress', activeMatch: '/guide/' },
 			{ text: 'Rust', link: '/rust/index', activeMatch: '/rust/' },
+			{ text: '其他', link: '/other/index', activeMatch: '/rust/' },
 			// {
 			// 	text: pkg.version,
 			// 	items: [
@@ -93,10 +94,11 @@ const config = defineConfig({
 		sidebar: {
 			'/guide/': sidebarGuide(),
 			'/rust/': sidebarRust(),
+			'/other/': sidebarOther(),
 		},
 		// 社交媒体跳转
 		socialLinks: [
-			{ icon: 'github', link: 'https://github.com/vanchKong/VitePressCN' },
+			{ icon: 'github', link: 'https://github.com/68245408/' },
 			// { icon: 'twitter', link: '...' },
 			// 还可以自定义icon
 			// {
@@ -248,6 +250,25 @@ function sidebarRust() {
 						{ text: '如何进行nodejs多版本管理', link: '/other/index' },
 					],
 				},
+			],
+		},
+	]
+}
+function sidebarOther() {
+	return [
+		{
+			text: '其他内容',
+			items: [
+				{ text: 'Windows下多版本NodeJS的实现', link: '/other/index' },
+				{ text: '常用在线文档平台开源项目收藏', link: '/other/doc' },
+				// {
+				// 	text: '第一章',
+				// 	// collapsed: true,
+				// 	items: [
+				// 		{ text: '第一节', link: '/rust/chapter1' },
+				// 		{ text: '如何进行nodejs多版本管理', link: '/other/index' },
+				// 	],
+				// },
 			],
 		},
 	]
