@@ -247,7 +247,7 @@ function sidebarRust() {
 					// collapsed: true,
 					items: [
 						{ text: '第一节', link: '/rust/chapter1' },
-						{ text: '如何进行nodejs多版本管理', link: '/other/index' },
+						{ text: '如何进行nodejs多版本管理?', link: '/other/index' },
 					],
 				},
 			],
